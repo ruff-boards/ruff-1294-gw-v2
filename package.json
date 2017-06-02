@@ -1,0 +1,14 @@
+{
+    "name": "ruff-1294-gw-v2",
+    "version": "0.1.0",
+    "description": "Ruff 1294 GW V2 Metadata",
+    "author": "Nanchao Inc.",
+    "dependencies": {
+		"rap-tm4c1294": "*"
+    },
+    "ruff": {
+        "dependencies": {
+            "led-gpio": "^2.0.0"
+        }
+    }
+}
