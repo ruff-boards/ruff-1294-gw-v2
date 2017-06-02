@@ -1,6 +1,6 @@
-# Ruff 1294 GW V0
+# Ruff 1294 GW V2
 
-The board project is for Ruff 1294 GW V0
+The board project is for Ruff 1294 GW V2
 
 
 ## Usage
@@ -8,7 +8,7 @@ The board project is for Ruff 1294 GW V0
 You can specify this board with `-b` while creating a project.
 
 ```bash
-rap init -b ruff-1294-gw-v0
+rap init -b ruff-1294-gw-v2
 ```
 
 ##License
