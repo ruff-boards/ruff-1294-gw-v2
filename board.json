@@ -325,7 +325,7 @@
                 "gpio": {
                     "type": "string",
                     "args": {
-                        "name": "K3",
+                        "name": "H1",
                         "polarity": true
                     }
                 }
@@ -356,7 +356,7 @@
                 "gpio": {
                     "type": "string",
                     "args": {
-                        "name": "K2",
+                        "name": "H0",
                         "polarity": true
                     }
                 }
