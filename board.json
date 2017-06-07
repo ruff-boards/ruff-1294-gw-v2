@@ -1,15 +1,15 @@
 {
     "version": "2.0",
-    "id": "ruff-1294-gw-v0",
-    "model": "ruff-1294-gw-v0",
+    "id": "ruff-1294-gw-v2",
+    "model": "ruff-1294-gw-v2",
     "preloads": {
-        "PWR_GPRS": "PL1/gpio"
     },
     "outputs": {
         "UART3": "UART3/uart",
         "UART4": "UART4/uart",
         "RS485-0": "RS485-0/rs485",
-        "RS485-1": "RS485-1/rs485"
+        "RS485-1": "RS485-1/rs485",
+        "PL1": "PL1/gpio"
     },
     "devices": [
         {
