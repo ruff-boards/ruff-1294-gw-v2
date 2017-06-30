@@ -3,6 +3,8 @@
     "id": "ruff-1294-gw-v2",
     "model": "ruff-1294-gw-v2",
     "preloads": {
+        "an-0": "ADC/an-0",
+        "an-1": "ADC/an-1"
     },
     "outputs": {
         "UART3": "UART3/uart",
@@ -370,6 +372,58 @@
             "outputs": {
                 "rs485": {
                     "type": "rs485"
+                }
+            }
+        },
+        {
+            "id": "ADC",
+            "model": "ruff-adc",
+            "driver": "mcu-adc",
+            "args": {
+                "referenceVoltage": 3.3,
+                "pinConfig" : {
+                    "an-0" : 0,
+                    "an-1" : 1,
+                    "an-2" : 2,
+                    "an-3" : 3,
+                    "an-4" : 4,
+                    "an-5" : 5,
+                    "an-6" : 6,
+                    "an-7" : 7
+                }
+            },
+            "inputs": {
+                "device": {
+                    "type": "string",
+                    "args": {
+                        "path": "/dev/adc0"
+                    }
+                }
+            },
+            "outputs": {
+                "an-0": {
+                    "type": "adc"
+                },
+                "an-1": {
+                    "type": "adc"
+                },
+                "an-2": {
+                    "type": "adc"
+                },
+                "an-3": {
+                    "type": "adc"
+                },
+                "an-4": {
+                    "type": "adc"
+                },
+                "an-5": {
+                    "type": "adc"
+                },
+                "an-6": {
+                    "type": "adc"
+                },
+                "an-7": {
+                    "type": "adc"
                 }
             }
         }
