@@ -1,5 +1,6 @@
 {
     "version": "2.0",
+    "featureVersion": "0.1",
     "id": "ruff-1294-gw-v2",
     "model": "ruff-1294-gw-v2",
     "preloads": {
@@ -11,6 +12,8 @@
         "UART4": "UART4/uart",
         "RS485-0": "RS485-0/rs485",
         "RS485-1": "RS485-1/rs485",
+        "PM0": "PM0/gpio",
+        "PL0": "PL0/gpio",
         "PL1": "PL1/gpio"
     },
     "devices": [
@@ -65,7 +68,17 @@
             },
             "outputs": {
                 "gpio": {
-                    "type": "gpio"
+                    "type": "gpio",
+                    "features": {
+                        "input": [
+                            "read",
+                            "interrupt",
+                            "pull"
+                        ],
+                        "output": [
+                            "write"
+                        ]
+                    }
                 }
             }
         },
@@ -83,7 +96,12 @@
             },
             "outputs": {
                 "gpio": {
-                    "type": "gpio"
+                    "type": "gpio",
+                    "features": {
+                        "output": [
+                            "write"
+                        ]
+                    }
                 }
             }
         },
@@ -101,7 +119,12 @@
             },
             "outputs": {
                 "gpio": {
-                    "type": "gpio"
+                    "type": "gpio",
+                    "features": {
+                        "output": [
+                            "write"
+                        ]
+                    }
                 }
             }
         },
@@ -119,25 +142,12 @@
             },
             "outputs": {
                 "gpio": {
-                    "type": "gpio"
-                }
-            }
-        },
-        {
-            "id": "PL1",
-            "model": "ruff-gpio",
-            "driver": "mcu-gpio",
-            "inputs": {
-                "pin": {
-                    "type": "string",
-                    "args": {
-                        "pin": "L1"
+                    "type": "gpio",
+                    "features": {
+                        "output": [
+                            "write"
+                        ]
                     }
-                }
-            },
-            "outputs": {
-                "gpio": {
-                    "type": "gpio"
                 }
             }
         },
@@ -155,25 +165,35 @@
             },
             "outputs": {
                 "gpio": {
-                    "type": "gpio"
+                    "type": "gpio",
+                    "features": {
+                        "output": [
+                            "write"
+                        ]
+                    }
                 }
             }
         },
         {
-            "id": "PP1",
+            "id": "PL1",
             "model": "ruff-gpio",
             "driver": "mcu-gpio",
             "inputs": {
                 "pin": {
                     "type": "string",
                     "args": {
-                        "pin": "P1"
+                        "pin": "L1"
                     }
                 }
             },
             "outputs": {
                 "gpio": {
-                    "type": "gpio"
+                    "type": "gpio",
+                    "features": {
+                        "output": [
+                            "write"
+                        ]
+                    }
                 }
             }
         },
@@ -191,25 +211,12 @@
             },
             "outputs": {
                 "gpio": {
-                    "type": "gpio"
-                }
-            }
-        },
-        {
-            "id": "CFG0",
-            "model": "ruff-gpio",
-            "driver": "mcu-gpio",
-            "inputs": {
-                "pin": {
-                    "type": "string",
-                    "args": {
-                        "pin": "H1"
+                    "type": "gpio",
+                    "features": {
+                        "output": [
+                            "write"
+                        ]
                     }
-                }
-            },
-            "outputs": {
-                "gpio": {
-                    "type": "gpio"
                 }
             }
         },
